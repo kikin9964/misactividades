@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+	<script src="js/funciones.js"></script>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/boot/css/bootstrap.min.css">
+	 <script type="text/javascript" src="bootstrap5/boot/js/bootstrap.min.js"></script>
+	 <script src="https://kit.fontawesome.com/75fcaecaf0.js" crossorigin="anonymous"></script>
+	 <style type="text/css">
+	 body{
+	 		background:black;
+	 		color: white;
+	 	}
+
+	 	.botoncabecera{
+	 		background-color: ;
+	 	}
+
+	 	.fechas{
+	 		border: 2px solid #F7F9F9;
+	 		border-radius: 40%;
+	 		padding: 2px 5px 2px 5px;
+	 	}
+
+	 	.nata{
+	 		border-radius: 50%;
+	 	}
+ 	
+
+	 	.circulo{
+	 		background: black;
+	 		padding: 11px;
+	 		border-radius: 50%;
+	 		width: 45px;
+	 		justify-content: center;
+	 	}
+	 	.reproducir
+	 	{
+	 		display: block;
+	 	}
+
+	 	.moto
+	 	{
+	 		color: white;
+	 	}
+
+	 	.carro
+	 	{
+	 		box-shadow: 0 0 20px 0;
+	 	}
+
+	 </style>
+</head>
+<body>	
+
+<div class="container">
+	<section class="row">
+		<main class="col-xl-6 col-lg-12 carro mt-3">
+			<div class="row justify-content-between m-5">
+				<div class="col-auto botoncabecera">
+					<div class="fechas">
+						<i class="fa-solid fa-arrow-left"></i>
+					</div>
+				</div>
+				<div class="col-auto botoncabecera">
+					<p class="d-none d-md-block">Reproducir Ahora</p>
+					<p class="d-block d-md-none">Ahora</p>
+				</div>
+				<div class="col-auto botoncabecera">
+					<div class="fechas">
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+				
+			<div class="row text-center">
+				<div class="col">
+					<img src="img/natamontana.jpg" height="200px" width="200px" class="nata">
+				</div>
+			</div>
+
+			<div class="row text-center m-3">
+				<div class="col">
+					<h2>Natanael Cano</h2>
+					<h6></h6>
+				</div>
+			</div>
+				
+				
+			<div class="row justify-content-between">
+				<span class="col-6 nombremp3">Nombre</span>
+				<span class="col-6 text-end audioTime" data-attr="timer">Tiempo</span>
+			</div>
+			<hr>
+			<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+		 		<div class="progress-bar progress-bar-striped progress-bar-animated updateProgress" ></div>
+			</div>
+			<div class="row m-4 justify-content-center">
+				<div class="col-4 circulo m-2">
+					<a href="#"><i class="fa-solid fa-rotate-right fa-2xl " style="color: #f7f7f7;"></i></a>
+				</div>
+				<div class="col-4 circulo m-2">
+					<a href="#"><i class="fa-solid fa-backward fa-2xl"  style="color: #f7f7f7;"></i></a>
+				</div>
+				<div class="col-4 circulo  m-2">
+					<a href="#"><i class="fa-solid fa-play fa-2xl" style="color: #f7f7f7;"></i></a>
+				</div>
+				<div class="col-4 circulo  m-2">
+					<a href="#"><i class="fa-solid fa-forward fa-2xl"  style="color: #f7f7f7;"></i></a>
+				</div>
+				<div class="col-4 circulo  m-2">
+					<a href="#">
+						<i class="fa-solid fa-volume-xmark fa-2xl"  style="color: #f7f7f7;"></i>
+					</a>
+				</div>
+			</div>
+		</main>	
+				
+		<aside class="col-xl-6 col-lg-12 moto">
+			<ul class="list-group mt-5 playlist">
+				 <li class="list-group-item" data-src="audios/El Toro Encartado.mp3">
+				 	<a href="#"><i class="fa-solid fa-play m-3"></i></a>Natanael Cano - El Toro Encuernado
+				</li>
+				<li class="list-group-item" data-src="audios/LOU LOU.mp3">				  	
+				  	<a href="#"><i class="fa-solid fa-play m-3"></i></a>Natanael Cano - LOU LOU
+				</li>
+				<li class="list-group-item" data-src="audios/Rompe La Dompe.mp3">				 	
+				 	<a href="#"><i class="fa-solid fa-play m-3"></i></a>Natanael Cano - Rompe La Dompe
+				</li>
+				<li class="list-group-item" data-src="audios/Mas Altas Que Bajadas.mp3">				
+					<a href="#"><i class="fa-solid fa-play m-3"></i></a>Natanael Cano - Mas Altas Que Bajadas
+				</li>
+				<li class="list-group-item" data-src="audios/Cuerno Azulado.mp3">	  	
+				  	<a href="#"><i class="fa-solid fa-play m-3"></i></a>Natanael Cano - Cuerno Azulado
+				</li>
+			</ul>
+		</aside>
+	</section>
+</div>
+</body>
+</html>
